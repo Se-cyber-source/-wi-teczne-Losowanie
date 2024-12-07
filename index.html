@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koło Fortuny - Świąteczna Edycja</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎄 Koło Fortuny - Świąteczna Edycja 🎄</h1>
+        <div>
+             <label for="playerNames">Imiona graczy (oddzielone przecinkami):</label>
+             <input type="text" id="playerNames" placeholder="np. Jan, Anna, Tomasz">
+            <label for="numSections">Liczba sekcji:</label>
+            <input type="number" id="numSections" min="2" max="20" value="6">
+            <button id="createWheel">Utwórz Koło</button>
+        </div>
+        <div>
+            <label for="sectionNames">Nazwy sekcji (oddzielone przecinkami):</label>
+            <input type="text" id="sectionNames" placeholder="np. Prezent, Choinka, Bałwanek">
+        </div>
+        <canvas id="wheelCanvas" width="500" height="500"></canvas>
+        <button id="spinWheel">🎁 Zakręć Kołem 🎁</button>
+        <div id="results">
+            <h2>Wylosowany Wynik:</h2>
+            <p id="currentResult">---</p>
+        </div>
+    </div>
+    <audio id="bgMusic" autoplay loop>
+    <source src="christmas-music.mp3" type="audio/mpeg">
+    Twoja przeglądarka nie obsługuje tagu audio.
+</audio>
+    <script src="script.js"></script>
+</body>
+</html>
+

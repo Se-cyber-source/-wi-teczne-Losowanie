@@ -1,0 +1,60 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    background-image: url('christmas-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+canvas {
+    border: 5px solid #fff;
+    margin: 20px auto;
+    display: block;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    background-color: #ff5733;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff6f4a;
+}
+
+#results {
+    margin-top: 20px;
+}
+
+#currentResult {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffdd00;
+}
+
+h1 {
+    font-size: 36px;
+    color: #ffdd00;
+}
+
+h2 {
+    color: #fff;
+}
+
+
