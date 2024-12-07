@@ -14,6 +14,16 @@ let currentPlayerIndex = 0;
 let anglePerSection;
 let currentAngle = 0;
 
+// Ustawienie rozmiaru canvas w zależności od szerokości ekranu
+function resizeCanvas() {
+    canvas.width = Math.min(window.innerWidth - 40, 400); // Maksymalna szerokość 400px
+    canvas.height = canvas.width; // Ustawienie proporcji kwadratu
+    drawWheel();
+}
+
+window.addEventListener('resize', resizeCanvas);
+resizeCanvas(); // Początkowe ustawienie
+
 // Start muzyki w tle
 bgMusic.volume = 1;
 bgMusic.play();
@@ -131,4 +141,5 @@ createWheelBtn.addEventListener("click", () => {
 });
 
 spinWheelBtn.addEventListener("click", spinWheel);
+
 
